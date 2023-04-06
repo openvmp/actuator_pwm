@@ -24,6 +24,7 @@ include_directories(
 
 set(project_SOURCE_FILES
   src/implementation.cpp
+  src/node.cpp
 )
 
 set(project_LIBRARIES
