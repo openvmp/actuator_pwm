@@ -17,7 +17,7 @@
 #include "remote_actuator/implementation.hpp"
 #include "std_msgs/msg/u_int16.hpp"
 
-namespace actuator_pwm {
+namespace remote_actuator_pwm {
 
 class Node;
 
@@ -43,6 +43,6 @@ class Implementation : public remote_actuator::Implementation {
   rclcpp::Publisher<std_msgs::msg::UInt16>::SharedPtr topic_pwm_;
 };
 
-}  // namespace actuator_pwm
+}  // namespace remote_actuator_pwm
 
 #endif  // OPENVMP_ACTUATOR_PWM_IMPLEMENTATION_H

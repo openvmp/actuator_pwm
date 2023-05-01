@@ -7,9 +7,9 @@
  * Licensed under Apache License, Version 2.0.
  */
 
-#include "actuator_pwm/implementation.hpp"
+#include "remote_actuator_pwm/implementation.hpp"
 
-namespace actuator_pwm {
+namespace remote_actuator_pwm {
 
 Implementation::Implementation(rclcpp::Node *node)
     : remote_actuator::Implementation(node) {
@@ -69,4 +69,4 @@ void Implementation::velocity_set_real_(double velocity) {
   topic_pwm_->publish(std_msgs::msg::UInt16().set__data(value));
 }
 
-}  // namespace actuator_pwm
+}  // namespace remote_actuator_pwm

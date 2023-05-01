@@ -7,12 +7,12 @@
  * Licensed under Apache License, Version 2.0.
  */
 
-#include "actuator_pwm/node.hpp"
 #include "rclcpp/rclcpp.hpp"
+#include "remote_actuator_pwm/node.hpp"
 
 int main(int argc, char **argv) {
   rclcpp::init(argc, argv);
-  auto node = std::make_shared<actuator_pwm::Node>();
+  auto node = std::make_shared<remote_actuator_pwm::Node>();
 
   rclcpp::executors::MultiThreadedExecutor exec;
   exec.add_node(node);

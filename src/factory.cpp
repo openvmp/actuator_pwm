@@ -7,17 +7,17 @@
  * Licensed under Apache License, Version 2.0.
  */
 
-#include "actuator_pwm/factory.hpp"
+#include "remote_actuator_pwm/factory.hpp"
 
 #include <exception>
 
-#include "actuator_pwm/implementation.hpp"
 #include "remote_actuator/interface_remote.hpp"
+#include "remote_actuator_pwm/implementation.hpp"
 
-namespace actuator_pwm {
+namespace remote_actuator_pwm {
 
 std::shared_ptr<remote_actuator::Interface> Factory::New(rclcpp::Node *node) {
   return std::make_shared<Implementation>(node);
 }
 
-}  // namespace actuator_pwm
+}  // namespace remote_actuator_pwm

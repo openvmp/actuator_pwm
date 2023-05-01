@@ -7,12 +7,12 @@
  * Licensed under Apache License, Version 2.0.
  */
 
-#include "actuator_pwm/node.hpp"
+#include "remote_actuator_pwm/node.hpp"
 
-namespace actuator_pwm {
+namespace remote_actuator_pwm {
 
-Node::Node() : rclcpp::Node::Node("actuator_pwm") {
+Node::Node() : rclcpp::Node::Node("remote_actuator_pwm") {
   intf_ = std::make_shared<Implementation>(this);
 }
 
-}  // namespace actuator_pwm
+}  // namespace remote_actuator_pwm

@@ -13,10 +13,10 @@
 #include <memory>
 #include <string>
 
-#include "actuator_pwm/implementation.hpp"
 #include "rclcpp/rclcpp.hpp"
+#include "remote_actuator_pwm/implementation.hpp"
 
-namespace actuator_pwm {
+namespace remote_actuator_pwm {
 
 class Node : public rclcpp::Node {
  public:
@@ -26,6 +26,6 @@ class Node : public rclcpp::Node {
   std::shared_ptr<Implementation> intf_;
 };
 
-}  // namespace actuator_pwm
+}  // namespace remote_actuator_pwm
 
 #endif  // OPENVMP_ACTUATOR_PWM_NODE_H

@@ -15,13 +15,13 @@
 #include "rclcpp/rclcpp.hpp"
 #include "remote_actuator/interface.hpp"
 
-namespace actuator_pwm {
+namespace remote_actuator_pwm {
 
 class Factory {
  public:
   static std::shared_ptr<remote_actuator::Interface> New(rclcpp::Node *node);
 };
 
-}  // namespace actuator_pwm
+}  // namespace remote_actuator_pwm
 
 #endif  // OPENVMP_ACTUATOR_PWM_FACTORY_H

@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
-project(actuator_pwm)
+project(remote_actuator_pwm)
 
 # Compiler settings
 if(NOT CMAKE_CXX_STANDARD)
